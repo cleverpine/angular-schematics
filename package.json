@@ -1,0 +1,25 @@
+{
+  "name": "cp-angular-schematics",
+  "version": "0.0.0",
+  "description": "Schematics collection for customising Angular project initial structures",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^17.0.3",
+    "@angular-devkit/schematics": "^17.0.3",
+    "typescript": "~5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.0",
+    "@types/jasmine": "~5.1.0",
+    "jasmine": "^5.0.0"
+  }
+}

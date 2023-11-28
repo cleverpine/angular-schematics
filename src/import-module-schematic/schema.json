@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "importAndAddModuleSchema",
+    "title": "Import And Add Module Options",
+    "type": "object",
+    "properties": {
+      "module": {
+        "type": "string",
+        "description": "The name of the module to insert into."
+      },
+      "import": {
+        "type": "string",
+        "description": "The name of the module to be imported."
+      },
+      "from": {
+        "type": "string",
+        "description": "The package to import the module from."
+      }
+    },
+    "required": [
+      "module",
+      "import",
+      "from"
+    ]
+  }
+  
